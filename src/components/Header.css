@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600;800&display=swap');
+
+.header {
+    justify-content: center;
+    align-items: center;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 60px;
+}
+  
+.header h1 {
+    font-size: 60px;
+    margin: 10px;
+    font-family: 'Raleway', sans-serif;
+}
+  .header #Color_Text {
+    color: #4C9346;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+  }
+  
+  .lets_recycle_btn {
+    border-radius: 20px 20px 0px 20px;
+    background-color: #4C9346;
+    color: white;
+    font-size: 15px;
+    font-family: 'Raleway', sans-serif;
+    font-weight:600;
+    border:none;
+    padding: 15px;
+    width: 150px;
+    margin-top: 50px;;
+  }
+  
+  .lets_recycle_btn:hover {
+    background-color: #234C20;
+    cursor: pointer;
+    transition: 0.2s ease-in;
+  }
+  
+  .learn_more {
+    border-radius: 20px 20px 20px 0px;
+    color:#232323;
+    background-color: #F9F9F9;
+    font-size: 15px;
+    font-family: 'Raleway', sans-serif;
+    font-weight:600;
+    border:none;
+    padding: 15px;
+    width: 150px;
+  }
+  
+  .learn_more:hover {
+    cursor: pointer;
+    color: #4C9346;
+    transition: 0.2s ease-in;
+  }
+  
+  .sharewaste {
+    background-image: url('../images/sharewastelogo.png');
+      color: #808080;
+      opacity: 0.5;
+      height: 100px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      margin-top: 50px;
+      filter: grayscale(100%)
+  }
+  .sharewaste h3 {
+    margin-left: 100px;
+    padding-top: 50px;
+  }
+
+ 

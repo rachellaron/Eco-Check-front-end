@@ -1,0 +1,189 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600;800&display=swap');
+
+/* .App {
+  text-align: center;
+} */
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+ body {
+  background-color: #F9F9F9;
+  
+  /* margin-top: 30px;
+  margin-left: 50px;
+  margin-right: 50px;
+  border: #282c34 solid 1px; */
+  font-family: 'Raleway', sans-serif;
+  background-image: url('./images/Background_img.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-x: -50px;
+  background-position-y: 50px;
+} 
+
+.navBar {
+  margin-top: 5px;
+}
+
+.logo {
+  background-image: url('./images/mdi_recycle.png');
+  background-position-x: 5px;
+  background-size: 60%;
+  height: 70px;
+  width: 70px;;
+  background-repeat: no-repeat;
+  position: absolute;
+  
+}
+
+.Eco {
+  margin-left: 50px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  position: absolute;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  color: #232323;
+}
+
+.Check {
+  margin-left: 50px;
+  margin-top: 19px;
+  margin-bottom: 10px;
+  position: absolute;
+  font-family: 'Raleway', sans-serif;
+  color: #4C9346;
+  font-weight: 800;
+}
+
+.nav_links {
+  margin-left: 140px;
+  text-decoration: none;
+  padding-top: 15px;
+}
+
+.nav_links a {
+  margin-left: 15px;
+  text-decoration: none;
+  font-size: 15px;
+  margin-top: 19px;
+  margin-bottom: 10px;
+  color: #232323;
+  
+}
+
+.nav_links a:hover {
+  color: #4C9346;
+}
+
+.HeaderBar {
+  margin-top:100px;
+}
+
+.HeaderBar h1 {
+  font-size: 60px;
+  line-height: 15px;
+}
+
+.HeaderBar #Color_Text {
+  color: #4C9346;
+  margin-bottom: 30px;
+}
+
+.DropDown {
+  margin-top: 100px;
+  position: relative;
+}
+
+.lets_recycle_btn {
+  border-radius: 20px 20px 0px 20px;
+  background-color: #4C9346;
+  color: white;
+  font-size: 15px;
+  font-family: 'Raleway', sans-serif;
+  font-weight:600;
+  border:none;
+  padding: 15px;
+  width: 150px;
+}
+
+.lets_recycle_btn:hover {
+  background-color: #234C20;
+  cursor: pointer;
+  transition: 0.2s ease-in;
+}
+
+.learn_more {
+  border-radius: 20px 20px 20px 0px;
+  color:#232323;
+  background-color: #F9F9F9;
+  font-size: 15px;
+  font-family: 'Raleway', sans-serif;
+  font-weight:600;
+  border:none;
+  padding: 15px;
+  width: 150px;
+}
+
+.learn_more:hover {
+  cursor: pointer;
+  color: #4C9346;
+  transition: 0.2s ease-in;
+}
+
+.sharewaste {
+  background-image: url('./images/sharewastelogo.png');
+    color: #808080;
+    opacity: 0.5;
+    height: 100px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 50px;
+    filter: grayscale(100%)
+}
+.sharewaste h3 {
+  margin-left: 100px;
+  padding-top: 50px;
+}
+
+
+
+
+
+
+ 

@@ -1,0 +1,102 @@
+.search {
+    margin-top: 100px;
+    margin-left: 200px;
+}
+
+
+.search-bar{
+    width: 500px;
+    float:left; /* add this */
+    height: 15px;
+}
+
+.search-bar2{
+    width: 500px;
+    height: 15px;
+    float:left; /* add this */
+}
+
+.search-btn {
+    border-radius: 5px 5px 5px 5px;
+    background-color: #4C9346;
+    color: white;
+    font-size: 15px;
+    font-family: 'Raleway', sans-serif;
+    font-weight:600;
+    border:none;
+    padding: 10px;
+    width: 150px;
+    margin-top: 100px;
+  }
+  
+ .search-btn:hover {
+    background-color: #234C20;
+    cursor: pointer;
+    transition: 0.2s ease-in;
+  }
+
+  .search a {
+    color: #4C9346;
+    font-weight: 800;
+    text-decoration: none;
+  }
+
+
+  .main-info-container {
+    margin-top: 80px;
+    width: 70%;
+    height: 700px;
+    background-color: white;
+    margin-left: 200px;
+    position: relative;
+    border: 2px solid #cccccc;
+    border-radius: 5px 5px 5px 5px;
+  }
+
+  .main-info-container .waiting {
+    text-align: center;
+    margin-top: 50px;
+
+  }
+
+  .waiting h1 {
+    font-size: 30px;
+  }
+
+  .waiting .fa-recycle {
+    font-size: 60px;
+    color: #4C9346;
+    margin-top: 20px;
+
+  }
+
+  .main-info-container .all-bins-img {
+    position: relative;
+    height: 500px;
+    margin-top: -30px;
+  }
+
+  .display-info {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    border-bottom: 2px solid #cccccc;
+  }
+
+  .product-img {
+    height: 500px;
+    margin-top: -30px;
+  }
+
+  .information-container {
+    position: absolute;
+    top: 0;
+    margin-top: 80px;
+    width: 60%;
+    margin-left: 20%;
+    text-align: center;
+  }
+
+ 
