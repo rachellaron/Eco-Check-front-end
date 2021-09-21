@@ -33,7 +33,6 @@ position: absolute;
 top: 0;
 left: 0;
 margin-left: -2px;
-margin-bottom: 100px;
 }
 
 .dropdown-btn {
@@ -49,6 +48,11 @@ margin-left: 80%;
   cursor: pointer;
   }
   
+.bottom {
+  margin-top: 500px;
+  margin-bottom: 500px;
+  background-color: red;
+}
   
 
 
