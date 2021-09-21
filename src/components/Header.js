@@ -13,7 +13,8 @@ function Header() {
                     <h1 id="Color_Text">EASY</h1>
                 </h1>
 
-                <button className="lets_recycle_btn">Let's Recycle</button>
+                <button className="lets_recycle_btn">
+                    <a href="#search">Let's Recycle</a></button>
                 <button className="learn_more">Learn More</button>
 
                 <div className="sharewaste">

@@ -141,7 +141,7 @@ class SearchBar extends Component {
 
         return (
             <div>
-                <div className="search">
+                <div id="search" className="search">
                     <h1> Let’s Check Your Product </h1>
                     <p>Search here by the <Link to='/'>Recycle Number</Link> on your product or choose from one of the <Link to='/'>Product Dropdowns</Link> listed.</p>
                     <Select className="search-bar"
