@@ -3,45 +3,39 @@
   margin-top: 20px;
   margin-bottom: 20px;
   border: 2px solid #cccccc;
-  background-color: white;
+  background-color: rgb(255, 166, 166);
   padding: 20px;
-  height: 20px;
   margin-left: 200px;
-  position: relative;
+}
+
+.pannel {
+  display: flex;
+  justify-content: space-between;
 }
 
 .label-tips label{
 font-weight: medium;
 }
 
-.lable-tips-open {
+/* .lable-tips-open {
 width: 100%;
 position: absolute;
 top: 0;
 left: 0;
 margin-top: 55px;
 border: 2px solid #cccccc;
-background-color: white;
-}
+} */
 
 .label-tips-img {
 width: 100%;
-background-color:white;
-margin-top: 60px;
 border: 2px solid #cccccc;
-position: absolute;
-top: 0;
-left: 0;
-margin-left: -2px;
 }
 
 .dropdown-btn {
-position: absolute;
 background-color: transparent;
 border:none;
 font-size: 25px;
 color: #4C9346;
-margin-left: 80%;
 }
 
 .dropdown-btn:hover {
@@ -49,7 +43,6 @@ margin-left: 80%;
   }
   
 .bottom {
-  margin-top: 500px;
   margin-bottom: 500px;
   background-color: red;
 }

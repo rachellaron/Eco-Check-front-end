@@ -1,8 +1,12 @@
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
 import './NavBar.css';
+import { Switch, Route, Link } from 'react-router-dom';
+import About from './About';
 
 function NavBar() {
+
+    const About = () => <h2>About</h2>;
 
     return (
         <div>
@@ -20,7 +24,7 @@ function NavBar() {
                             </Link>
                         </li>
                         <li className="nav-item">
-                            <Link to='/' className='nav-links'>
+                            <Link to='/about' className='nav-links'>
                                 About
                             </Link>
                         </li>
@@ -37,6 +41,10 @@ function NavBar() {
                     </ul>
                 </div>
             </nav>
+
+            <Route path="/about" component={About} />
+
+            {/* // Switch, Route, Link */}
 
         </div>
     )

@@ -6,6 +6,7 @@ import NavBar from './components/NavBar';
 import Header from './components/Header'
 import SearchBar from './components/SearchBar';
 import TipsToggle from './components/LableTips';
+import About from './components/About'
 
 function App() {
   return (

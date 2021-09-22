@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
-import LabelTips from './images/LabelTips.png'
-import LabelTipsTrans from './images/lable-tips-trans.png'
+import LabelTips from './images/lable-tips-trans.png'
 import './LableTips.css'
 
 function TipsToggle() {
@@ -14,13 +13,15 @@ function TipsToggle() {
 
         <div className="label-tips">
             {/* <a href="#top">Back to Top</a> */}
-            <label>Label Tips</label>
-            <a href="#bottom"><button className="dropdown-btn" onClick={() => setShow(!show)} >
-                <div className="dropdown-btn" onClick={handleClick}>
-                    <i className={click ? 'fas fa-times' : 'fas fa-chevron-down'}></i>
-                </div></button></a>
+            <div className="pannel">
+                <label>Label Tips</label>
+                <a href="#bottom"><button className="dropdown-btn" onClick={() => setShow(!show)} >
+                    <div className="dropdown-btn" onClick={handleClick}>
+                        <i className={click ? 'fas fa-times' : 'fas fa-chevron-down'}></i>
+                    </div></button></a>
+            </div>
             {
-                show ? <img className="label-tips-img" src={LabelTipsTrans} alt="" /> : null
+                show ? <img id="bottom" className="label-tips-img" src={LabelTips} alt="" /> : null
             }
             {/* <div className="bottom" id="bottom">bottom</div> */}
         </div>
