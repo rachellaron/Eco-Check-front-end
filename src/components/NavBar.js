@@ -6,8 +6,6 @@ import About from './About';
 
 function NavBar() {
 
-    const About = () => <h2>About</h2>;
-
     return (
         <div>
             <nav className="navbar">
@@ -41,8 +39,13 @@ function NavBar() {
                     </ul>
                 </div>
             </nav>
+            <Switch>
+                <Route path='/about'>
+                    <About />
+                </Route>
+            </Switch>
 
-            <Route path="/about" component={About} />
+
 
             {/* // Switch, Route, Link */}
 
