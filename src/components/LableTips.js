@@ -15,15 +15,15 @@ function TipsToggle() {
             {/* <a href="#top">Back to Top</a> */}
             <div className="pannel">
                 <label>Label Tips</label>
-                <a href="#bottom"><button className="dropdown-btn" onClick={() => setShow(!show)} >
-                    <div className="dropdown-btn" onClick={handleClick}>
-                        <i className={click ? 'fas fa-times' : 'fas fa-chevron-down'}></i>
-                    </div></button></a>
+                <button className="dropdown-btn" onClick={() => setShow(!show)} >
+                <div className="dropdown-btn" onClick={handleClick}>
+                <a href="#bottom"><i className={click ? 'fas fa-times' : 'fas fa-chevron-down'}></i></a>
+                    </div></button>
             </div>
             {
-                show ? <img id="bottom" className="label-tips-img" src={LabelTips} alt="" /> : null
+                show ? <img className="label-tips-img" src={LabelTips} alt="" /> : null
             }
-            {/* <div className="bottom" id="bottom">bottom</div> */}
+            <div className="bottom" id="bottom">bottom</div> 
         </div>
     );
 }
