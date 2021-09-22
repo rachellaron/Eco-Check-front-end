@@ -54,10 +54,17 @@
     width: 150px;
   }
   
-  .learn_more:hover {
+
+  .learn_more a {
+    color:#232323;
+    text-decoration: none;
+  }
+
+  .learn_more a:hover {
     cursor: pointer;
     color: #4C9346;
     transition: 0.2s ease-in;
+    text-decoration: none;
   }
   
   .sharewaste {
@@ -68,14 +75,16 @@
       background-size: contain;
       background-repeat: no-repeat;
       margin-top: 50px;
-      filter: grayscale(100%)
+      filter: grayscale(100%);
   }
   .sharewaste h3 {
     margin-left: 100px;
     padding-top: 50px;
+
   }
 
-  #search {
-   
+  .sharewaste a {
+    text-decoration: none;
   }
+
  

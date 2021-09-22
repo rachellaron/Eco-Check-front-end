@@ -3,14 +3,13 @@
     margin-left: 200px;
 }
 
-
-.search-bar{
+.product{
     width: 500px;
     float:left; /* add this */
     height: 15px;
 }
 
-.search-bar2{
+.recycle-key{
     width: 500px;
     height: 15px;
     float:left; /* add this */
@@ -87,7 +86,7 @@
 
   .product-img {
     height: 500px;
-    margin-top: -30px;
+    margin-top: -16px;
   }
 
   .information-container {
@@ -99,6 +98,7 @@
     text-align: center;
   }
 
-  a {
+  b {
+    color:#4C9346;
 
   }

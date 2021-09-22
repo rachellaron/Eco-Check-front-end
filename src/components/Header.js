@@ -15,17 +15,12 @@ function Header() {
 
                 <button className="lets_recycle_btn">
                     <a href="#search">Let's Recycle</a></button>
-                <button className="learn_more">Learn More</button>
+                <button className="learn_more"><a href="https://www.sustainability.vic.gov.au/recycling-and-reducing-waste/at-home" target="_blank">Learn More</a></button>
 
                 <div className="sharewaste">
-                    <h3>ShareWaste | Give your waste a second chance!</h3>
+                    <a href="https://sharewaste.com/" target="_blank"><h3>ShareWaste | Give your waste a second chance!</h3></a>
                 </div>
-
-
-
-
             </div>
-
         </div>
     )
 }

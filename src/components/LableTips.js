@@ -3,8 +3,6 @@ import LabelTips from './images/LabelTips.png'
 import LabelTipsTrans from './images/lable-tips-trans.png'
 import './LableTips.css'
 
-
-
 function TipsToggle() {
     const [show, setShow] = useState(false)
 
@@ -13,7 +11,6 @@ function TipsToggle() {
     const handleClick = () => setClick(!click);
 
     return (
-
 
         <div className="label-tips">
             {/* <a href="#top">Back to Top</a> */}
