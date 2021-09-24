@@ -17,13 +17,12 @@ function TipsToggle() {
                 <label>Label Tips</label>
                 <button className="dropdown-btn" onClick={() => setShow(!show)} >
                 <div className="dropdown-btn" onClick={handleClick}>
-                <a href="#bottom"><i className={click ? 'fas fa-times' : 'fas fa-chevron-down'}></i></a>
+                <i className={click ? 'fas fa-times' : 'fas fa-chevron-down'}></i>
                     </div></button>
             </div>
             {
                 show ? <img className="label-tips-img" src={LabelTips} alt="" /> : null
-            }
-            <div className="bottom" id="bottom">bottom</div> 
+            } 
         </div>
     );
 }

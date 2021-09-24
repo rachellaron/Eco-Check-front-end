@@ -3,7 +3,7 @@
   margin-top: 20px;
   margin-bottom: 20px;
   border: 2px solid #cccccc;
-  background-color: rgb(255, 166, 166);
+  background-color: rgb(255, 255, 255);
   padding: 20px;
   margin-left: 200px;
 }
@@ -17,18 +17,10 @@
 font-weight: medium;
 }
 
-/* .lable-tips-open {
-width: 100%;
-position: absolute;
-top: 0;
-left: 0;
-margin-top: 55px;
-border: 2px solid #cccccc;
-} */
-
 .label-tips-img {
+margin-top: 20px;
 width: 100%;
-border: 2px solid #cccccc;
+border-top: 2px solid #cccccc;
 }
 
 .dropdown-btn {
@@ -42,9 +34,7 @@ color: #4C9346;
   cursor: pointer;
   }
   
-.bottom {
-  background-color: red;
-}
+
   
 
 

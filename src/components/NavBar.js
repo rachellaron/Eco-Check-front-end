@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
-// import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import './NavBar.css';
-import { Switch, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Redirect, Switch } from 'react-router-dom';
+// import { Switch, Route, Link } from 'react-router-dom';
 import About from './About';
 
 function NavBar() {
@@ -12,8 +13,8 @@ function NavBar() {
                 <div className="navbar-container">
 
                     <i className="fas fa-recycle"></i>
-                    <h2 className="eco-name">Eco</h2>
-                    <h2 className="check-name">Check</h2>
+                    <Link to='/' className="eco-name" ><h2 className="eco-name">Eco</h2></Link>
+                    <Link to='/' className="check-name" ><h2 className="check-name">Check</h2></Link>
 
                     <ul className='nav-menu active'>
                         <li className="nav-item">
@@ -27,9 +28,7 @@ function NavBar() {
                             </Link>
                         </li>
                         <li className="nav-item">
-                            <Link to='/' className='nav-links'>
-                                Help
-                            </Link>
+                            <a href="https://www.sustainability.vic.gov.au/" target="_blank" className='nav-links'>More Info</a>
                         </li>
                         <li className="nav-item">
                             <Link to='/' className='nav-links'>
@@ -39,16 +38,6 @@ function NavBar() {
                     </ul>
                 </div>
             </nav>
-            <Switch>
-                <Route path='/about'>
-                    <About />
-                </Route>
-            </Switch>
-
-
-
-            {/* // Switch, Route, Link */}
-
         </div>
     )
 }

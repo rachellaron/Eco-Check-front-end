@@ -45,12 +45,14 @@
     color: #232323;
     margin-left: 10px;
     font-size: 25px;
+    text-decoration: none;
     font-family: 'Raleway', sans-serif;
   }
 
   .check-name {
     color: #4C9346;
     font-size: 25px;
+    text-decoration: none;
     font-family: 'Raleway', sans-serif;
   }
   
@@ -80,10 +82,8 @@
     font-family: 'Raleway', sans-serif;
   }
   
-  .nav-links:hover {
+  .nav-links:hover, :focus, :active {
     color: #4C9346;
   }
-  
- 
 
   
