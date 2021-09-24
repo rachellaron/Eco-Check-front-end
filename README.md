@@ -1,70 +1,68 @@
-# Getting Started with Create React App
+🪴  **ABOUT** 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Recycling is **hard** and it **shouldn't be**. How about an application where an user can find products easily and how to dispose of them without a hassel of a sign up or sign in. That brings you to EcoCheck. A Single Plage application where a User is able to search a product name or a the recycle key shown on the product, once search, the information will then let the user know how to dispose of it. Recycle, Waste or Compost. 
 
-## Available Scripts
+**💻  SEE IT LIVE**
 
-In the project directory, you can run:
+To see the deployed applicaiton live and to use it yourself please visit this link → 
 
-### `yarn start`
+❓ **HOW TO USE** 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+The user gets greated with a welcome sign saying 'Because Recycling should be easy! They are then able to click the button that says `Let's Recycle`  which will take them to the mains section of the site. The user can then either type and it will autofill what they are wanting to search or use the dropdown to scroll through the options.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+💻 **BEHIND THE SCENES** 
 
-### `yarn test`
+This application is a full stake application. It is build using 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- REACT
+- HTML
+- CSS
+- NODE.JS
+- EXPRESS
+- SQL
+- AXIOS
 
-### `yarn build`
+✏️ **THE PLANNING** 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+This app is Melbourne Based only currently 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+An application for when you search a product (bottle, plastic, chip packet etc) or a number it will tell you if its recyclable, compostable or not and also link you to your nearest compost area if you don't have. → [https://sharewaste.com/](https://sharewaste.com/)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+**Pages** 
 
-### `yarn eject`
+- `Index.html`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+    → NavBar (Home, About, Tips, ShareWaste, Contact)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+    → Name Dropdown Menu (Common items such as Bread, Meat, Dairy, Household Goods, Garden Waste) 
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+    → Display Dropdown Item Clicked (Infographics on what to do with specific product) 
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+    1. yay! Recyclable ! (Yellow Bin, Dispose of caps etc) 
+    2. Amazing! Compostable (Share waste etc)
+    3. Oh No! Normal Waste (Red or Green Lid Bin) 
+    4.  WooHoo! Green waste! (Green Lid Bin)
+- `About.html`
 
-## Learn More
+    → Infographic of Plastic Numbers (see IMG above)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- `Tips.html`
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+    → Shop Organically, Avoid single use plastics, Reuse products, Different ways to compost at home 
 
-### Code Splitting
+- `link to sharewaste`
+- `Contact.html`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+    → Help Content → I don't know how to use site etc. 
 
-### Analyzing the Bundle Size
+**Wireframe Planning**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+💡 **FEATURES TO BE ADDED IN** 
 
-### Making a Progressive Web App
+More Products and wider audience (Australia Wide
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+⁉️ **BUGS**
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Not Fully Responisve Yet
+- Label Tips Transition isnt smooth and drops to #bottom of page
+- Sometimes page renders double product names and sometime it doesn't
