@@ -1,19 +1,19 @@
-🪴 
-# ABOUT
+ 
+# 🪴 ABOUT 
 Recycling is **hard** and it **shouldn't be**. How about an application where an user can find products easily and how to dispose of them without a hassel of a sign up or sign in. That brings you to EcoCheck. A Single Plage application where a User is able to search a product name or a the recycle key shown on the product, once search, the information will then let the user know how to dispose of it. Recycle, Waste or Compost. 
 
-💻  
-# SEE IT LIVE
+
+# 💻  SEE IT LIVE
 
 To see the deployed applicaiton live and to use it yourself please visit this link → 
 
-❓ 
-# HOW TO USE
+
+# ❓ HOW TO USE
 
 The user gets greated with a welcome sign saying 'Because Recycling should be easy! They are then able to click the button that says `Let's Recycle`  which will take them to the mains section of the site. The user can then either type and it will autofill what they are wanting to search or use the dropdown to scroll through the options.
 
-💻 
-# BEHIND THE SCENES
+ 
+# 💻 BEHIND THE SCENES
 
 This application is a full stake application. It is build using 
 
@@ -25,8 +25,8 @@ This application is a full stake application. It is build using
 - SQL
 - AXIOS
 
-✏️  
-# THE PLANNING
+  
+# ✏️ THE PLANNING
 
 This app is Melbourne Based only currently 
 
@@ -61,13 +61,13 @@ An application for when you search a product (bottle, plastic, chip packet etc) 
 
 **Wireframe Planning**
 
-💡 
-# FEATURES TO BE ADDED IN
+
+# 💡 FEATURES TO BE ADDED IN
 
 More Products and wider audience (Australia Wide
 
-⁉️ 
-# BUGS
+
+# ⁉️ BUGS
 
 - Not Fully Responisve Yet
 - Label Tips Transition isnt smooth and drops to #bottom of page
