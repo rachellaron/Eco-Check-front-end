@@ -40,7 +40,6 @@
     text-decoration: none;
   }
 
-
   .main-info-container {
     margin-top: 80px;
     width: 70%;
@@ -55,7 +54,6 @@
   .main-info-container .waiting {
     text-align: center;
     margin-top: 50px;
-
   }
 
   .waiting h1 {
@@ -66,7 +64,6 @@
     font-size: 60px;
     color: #4C9346;
     margin-top: 20px;
-
   }
 
   .main-info-container .all-bins-img {
@@ -100,5 +97,4 @@
 
   b {
     color:#4C9346;
-
   }

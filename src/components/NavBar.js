@@ -1,12 +1,8 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import './NavBar.css';
-import { BrowserRouter as Router, Route, Redirect, Switch } from 'react-router-dom';
-// import { Switch, Route, Link } from 'react-router-dom';
-import About from './About';
 
 function NavBar() {
-
     return (
         <div>
             <nav className="navbar">
@@ -31,7 +27,7 @@ function NavBar() {
                             <a href="https://www.sustainability.vic.gov.au/" target="_blank" className='nav-links'>More Info</a>
                         </li>
                         <li className="nav-item">
-                            <Link to='/' className='nav-links'>
+                            <Link to='/contact' className='nav-links'>
                                 Contact
                             </Link>
                         </li>

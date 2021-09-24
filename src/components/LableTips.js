@@ -10,19 +10,17 @@ function TipsToggle() {
     const handleClick = () => setClick(!click);
 
     return (
-
         <div className="label-tips">
-            {/* <a href="#top">Back to Top</a> */}
             <div className="pannel">
                 <label>Label Tips</label>
                 <button className="dropdown-btn" onClick={() => setShow(!show)} >
-                <div className="dropdown-btn" onClick={handleClick}>
-                <i className={click ? 'fas fa-times' : 'fas fa-chevron-down'}></i>
+                    <div className="dropdown-btn" onClick={handleClick}>
+                        <i className={click ? 'fas fa-times' : 'fas fa-chevron-down'}></i>
                     </div></button>
             </div>
             {
                 show ? <img className="label-tips-img" src={LabelTips} alt="" /> : null
-            } 
+            }
         </div>
     );
 }

@@ -1,21 +1,17 @@
 import { Component } from 'react';
 import Select from 'react-select';
 import axios from 'axios'
-import { Link } from 'react-router-dom'
 import './SearchBar.css'
 import binimage from './images/all-bins-imgs.png'
 import React, { useState } from 'react'
 import _ from 'underscore'
 
-
-
+// Setting up empty arrays to store new data in
 const productoptions = []
 const keyoptions = []
 const allInfo = []
-//const unique = []
 console.log(keyoptions)
 
-// const [click, setClick] = useState(false)
 
 class SearchBar extends Component {
     state = {
@@ -26,10 +22,11 @@ class SearchBar extends Component {
         axios.get('/api/show')
             .then(res => {
                 for (var i = 0; i < res.data.data.length; i++) {
-
+                    // accessing all data product name from DB and pushing into allInfo Array
                     productoptions.push({ value: res.data.data[i].product_name, label: res.data.data[i].product_name })
                     allInfo.push(res.data.data[i])
 
+                    // Making sure only unique recycle key numbers are pushed into keyoptions array
                     let isAlreadyAnOption = false;
                     for (var a = 0; a < keyoptions.length; a++) {
                         if (keyoptions[a].value == res.data.data[i].recycle_number) {
@@ -48,13 +45,11 @@ class SearchBar extends Component {
         this.setState({ selectedOption: event.value })
     };
 
-    // handleClick = () => {
-    //     return('Click happened');
-    //   }
+
+    // Accessing all data types and returning them so they can render on the page
 
     ProductKeyDisplayInfo = () => {
         for (var i = 0; i < allInfo.length; i++) {
-            //.log(allInfo[i].product_key)
             if (this.state.selectedOption == allInfo[i].product_name) {
                 return allInfo[i].info
             }
@@ -63,7 +58,6 @@ class SearchBar extends Component {
 
     ProductKeyBin = () => {
         for (var i = 0; i < allInfo.length; i++) {
-            //.log(allInfo[i].product_key)
             if (this.state.selectedOption == allInfo[i].product_name) {
                 return `Your Product goes in the ${allInfo[i].bin_info}`
             }
@@ -72,7 +66,6 @@ class SearchBar extends Component {
 
     ProductKeyImage = () => {
         for (var i = 0; i < allInfo.length; i++) {
-            //.log(allInfo[i].product_key)
             if (this.state.selectedOption == allInfo[i].product_name) {
                 return allInfo[i].image
             }
@@ -81,7 +74,6 @@ class SearchBar extends Component {
 
     ProductKeyCommonForm = () => {
         for (var i = 0; i < allInfo.length; i++) {
-            //.log(allInfo[i].product_key)
             if (this.state.selectedOption == allInfo[i].product_name) {
                 return `Common Forms: ${allInfo[i].common_form}`
             }
@@ -90,7 +82,6 @@ class SearchBar extends Component {
 
     RecycleKeyDisplayInfo = () => {
         for (var i = 0; i < allInfo.length; i++) {
-            // console.log(allInfo[i].product_key)
             if (this.state.selectedOption == allInfo[i].recycle_number) {
                 return allInfo[i].info
             }
@@ -99,7 +90,6 @@ class SearchBar extends Component {
 
     RecycleKeyBin = () => {
         for (var i = 0; i < allInfo.length; i++) {
-            //.log(allInfo[i].product_key)
             if (this.state.selectedOption == allInfo[i].product_name) {
                 return `Your Product goes in the ${allInfo[i].bin_info}`
             }
@@ -108,7 +98,6 @@ class SearchBar extends Component {
 
     RecycleKeyImage = () => {
         for (var i = 0; i < allInfo.length; i++) {
-            // console.log(allInfo[i].product_key)
             if (this.state.selectedOption == allInfo[i].recycle_number) {
                 return allInfo[i].image
             }
@@ -117,7 +106,6 @@ class SearchBar extends Component {
 
     RecycleKeyCommonForm = () => {
         for (var i = 0; i < allInfo.length; i++) {
-            //.log(allInfo[i].product_key)
             if (this.state.selectedOption == allInfo[i].recycle_number) {
                 return `Common Forms: ${allInfo[i].common_form}`
             }
@@ -125,7 +113,6 @@ class SearchBar extends Component {
     }
 
     render() {
-        const { selectedOption } = this.state;
         const isProductRecycable = this.ProductKeyDisplayInfo()
         const productCommonForms = this.ProductKeyCommonForm()
         const isReycleKeyRecycable = this.RecycleKeyDisplayInfo()
@@ -133,13 +120,6 @@ class SearchBar extends Component {
         const ProductKeyImage = this.ProductKeyImage()
         const RecycleKeyImage = this.RecycleKeyImage()
         const ProductKeyBin = this.ProductKeyBin()
-        // const handleClick = this.handleClick()
-
-        // if (ProductKeyBin == "Compost ") {
-        //     console.log ('sharewaste.com.au')
-        // }
-
-        console.log(ProductKeyBin)
 
         return (
             <div>
@@ -147,17 +127,15 @@ class SearchBar extends Component {
                     <h1> Let’s Check Your Product </h1>
                     <p>Search here by the <b>Product Name</b> or look up the <b>Recycle Number</b> on your product.</p>
 
-                        <Select className="product"
-                            //value={this.state.selectedOption}
-                            onChange={this.handleChange}
-                            options={productoptions}
-                        />
+                    <Select className="product"
+                        onChange={this.handleChange}
+                        options={productoptions}
+                    />
 
-                        <Select className="recycle-key"
-                            //value={selectedOption}
-                            onChange={this.handleChange}
-                            options={keyoptions}
-                        />
+                    <Select className="recycle-key"
+                        onChange={this.handleChange}
+                        options={keyoptions}
+                    />
 
                 </div>
 
