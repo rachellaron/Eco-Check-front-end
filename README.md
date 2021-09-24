@@ -6,6 +6,7 @@ Recycling is **hard** and it **shouldn't be**. How about an application where an
 # 💻  SEE IT LIVE
 
 To see the deployed applicaiton live and to use it yourself please visit this link → 
+https://salty-castle-07122.herokuapp.com/
 
 
 # ❓ HOW TO USE
