@@ -61,7 +61,7 @@ An application for when you search a product (bottle, plastic, chip packet etc) 
     → Help Content → I don't know how to use site etc. 
 
 **User Stories and Wireframe Planning**!
-[Screen Shot 2021-09-24 at 8 00 35 pm](https://user-images.githubusercontent.com/81345558/134656909-d900ba3f-7612-4b98-8aac-bd2a5d45a960.png)
+![Screen Shot 2021-09-24 at 8 00 35 pm](https://user-images.githubusercontent.com/81345558/134656909-d900ba3f-7612-4b98-8aac-bd2a5d45a960.png)
 ![Screen Shot 2021-09-24 at 8 00 56 pm](https://user-images.githubusercontent.com/81345558/134656898-688b638d-fb56-466a-8cd1-128455af922f.png)
 ![Screen Shot 2021-09-24 at 8 02 19 pm](https://user-images.githubusercontent.com/81345558/134657013-cee99277-cd01-4f0e-ae62-814a6d4943b3.png)
 ![Screen Shot 2021-09-24 at 8 02 12 pm](https://user-images.githubusercontent.com/81345558/134657022-c4144fc7-492b-4d7f-b43c-374d2892f75a.png)
