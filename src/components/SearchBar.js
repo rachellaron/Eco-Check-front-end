@@ -88,14 +88,6 @@ class SearchBar extends Component {
         }
     }
 
-    RecycleKeyBin = () => {
-        for (var i = 0; i < allInfo.length; i++) {
-            if (this.state.selectedOption == allInfo[i].product_name) {
-                return `Your Product goes in the ${allInfo[i].bin_info}`
-            }
-        }
-    }
-
     RecycleKeyImage = () => {
         for (var i = 0; i < allInfo.length; i++) {
             if (this.state.selectedOption == allInfo[i].recycle_number) {
@@ -120,7 +112,7 @@ class SearchBar extends Component {
         const ProductKeyImage = this.ProductKeyImage()
         const RecycleKeyImage = this.RecycleKeyImage()
         const ProductKeyBin = this.ProductKeyBin()
-
+        
         return (
             <div>
                 <div id="search" className="search">
@@ -152,7 +144,7 @@ class SearchBar extends Component {
                     </div>
 
                     <div style={{ visibility: this.state.selectedOption ? 'visible' : 'hidden' }} className="information-container">
-                        <h3>Your Product goes in the {ProductKeyBin}</h3>
+                        <p>{ProductKeyBin}</p>
                         <p>{isProductRecycable}</p>
                         <p>{productCommonForms}</p>
 
@@ -160,6 +152,8 @@ class SearchBar extends Component {
 
                         <p>{isReycleKeyRecycable}</p>
                         <p>{recycleKeyCommonForms}</p>
+
+                        {recycleKeyCommonForms === `Common Forms: Compost` ? <p>Find your nearest Compost Share Waste Drop off <a href="https://sharewaste.com/" target="_blank"> Here</a></p> : <p></p>}
 
                         <img className="product-img" src={ProductKeyImage}></img>
                         <img className="product-img" src={RecycleKeyImage}></img>
